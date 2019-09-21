@@ -1,1 +1,1 @@
-web: java -war target/siantonx.war
+web: java -jar target/siantonx.jar
