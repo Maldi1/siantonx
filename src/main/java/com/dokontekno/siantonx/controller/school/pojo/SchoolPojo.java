@@ -24,6 +24,8 @@ public class SchoolPojo extends BaseMasterPojo {
     public SchoolPojo toSchoolPojo(School school){
         if (school == null) return null;
 
+        System.out.println("NAMA OBJECT SCHOOLS >>>>>>>>>>>>>>>>>>>>>>>>> "+school.getName());
+
         SchoolPojo schoolPojo = new SchoolPojo();
         schoolPojo.setId(school.getId());
         schoolPojo.setCreateAt(school.getCreateAt());
