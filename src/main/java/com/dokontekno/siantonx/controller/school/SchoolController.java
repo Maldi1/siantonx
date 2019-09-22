@@ -3,6 +3,8 @@ package com.dokontekno.siantonx.controller.school;
 import com.dokontekno.siantonx.controller.school.pojo.SchoolPojo;
 import com.dokontekno.siantonx.entity.school.School;
 import com.dokontekno.siantonx.service.school.SchoolService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +16,8 @@ import java.util.UUID;
 @RequestMapping(value = SchoolController.PATH)
 public class SchoolController {
 
+//    Logger logger = LoggerFactory.getLogger(SchoolPojo.class);
+
     public static final String PATH = "/school";
     private SchoolPojo schoolPojo = new SchoolPojo();
 
@@ -24,6 +28,7 @@ public class SchoolController {
     @GetMapping(value = "/{id}")
     public SchoolPojo getSchool(@PathVariable UUID id){
         School school = schoolService.getSchool(id);
+//        logger.debug("is school empty : "+(school.getName()));
         return schoolPojo.toSchoolPojo(school);
     }
 

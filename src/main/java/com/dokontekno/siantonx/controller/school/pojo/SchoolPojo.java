@@ -2,6 +2,7 @@ package com.dokontekno.siantonx.controller.school.pojo;
 
 import com.dokontekno.siantonx.controller.commonspojo.BaseMasterPojo;
 import com.dokontekno.siantonx.entity.school.School;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,8 +24,6 @@ public class SchoolPojo extends BaseMasterPojo {
 
     public SchoolPojo toSchoolPojo(School school){
         if (school == null) return null;
-
-        System.out.println("NAMA OBJECT SCHOOLS >>>>>>>>>>>>>>>>>>>>>>>>> "+school.getName());
 
         SchoolPojo schoolPojo = new SchoolPojo();
         schoolPojo.setId(school.getId());
