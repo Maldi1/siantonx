@@ -11,12 +11,13 @@ import java.util.UUID;
 
 @Repository
 public interface SchoolRepository extends JpaRepository<School, UUID> {
-    public Boolean existsByNpsn(String npsn);
+    Boolean existsByNpsn(String npsn);
 
-    @Query(value = "FROM School \n" +
+    @Query(value = "SELECT * FROM \"master_school\" \n" +
                    "WHERE id IS NOT NULL AND npsn LIKE :npsn AND name LIKE :name AND address LIKE :address \n" +
-                   "AND email LIKE :email AND phone_number LIKE :phoneNumber AND whatsapp_number LIKE :whatsappNumber")
-    public List<School> getSchools(@Param("npsn") String npsn,
+                   "AND email LIKE :email AND phone_number LIKE :phoneNumber AND whatsapp_number LIKE :whatsappNumber",
+                    nativeQuery = true)
+    List<School> getSchools(@Param("npsn") String npsn,
                                    @Param("name") String name,
                                    @Param("address") String address,
                                    @Param("email") String email,
