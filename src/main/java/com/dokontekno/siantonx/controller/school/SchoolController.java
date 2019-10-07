@@ -18,7 +18,7 @@ public class SchoolController {
 
 //    Logger logger = LoggerFactory.getLogger(SchoolPojo.class);
 
-    public static final String PATH = "/school";
+    public static final String PATH = "/api/school";
     private SchoolPojo schoolPojo = new SchoolPojo();
 
     @Autowired

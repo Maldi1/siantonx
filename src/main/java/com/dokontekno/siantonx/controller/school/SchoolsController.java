@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = SchoolsController.PATH)
 public class SchoolsController {
-    public static final String PATH = "/schools";
+    public static final String PATH = "/api/schools";
     private SchoolPojo schoolPojo = new SchoolPojo();
 
     @Autowired
