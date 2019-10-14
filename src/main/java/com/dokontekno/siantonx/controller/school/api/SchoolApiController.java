@@ -1,10 +1,8 @@
-package com.dokontekno.siantonx.controller.school;
+package com.dokontekno.siantonx.controller.school.api;
 
 import com.dokontekno.siantonx.controller.school.pojo.SchoolPojo;
 import com.dokontekno.siantonx.entity.school.School;
 import com.dokontekno.siantonx.service.school.SchoolService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,8 +11,8 @@ import java.util.UUID;
 
 @CrossOrigin(value = "*")
 @RestController
-@RequestMapping(value = SchoolController.PATH)
-public class SchoolController {
+@RequestMapping(value = SchoolApiController.PATH)
+public class SchoolApiController {
 
 //    Logger logger = LoggerFactory.getLogger(SchoolPojo.class);
 

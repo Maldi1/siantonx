@@ -1,4 +1,4 @@
-package com.dokontekno.siantonx.controller.school;
+package com.dokontekno.siantonx.controller.school.api;
 
 import com.dokontekno.siantonx.controller.school.pojo.SchoolPojo;
 import com.dokontekno.siantonx.entity.school.School;
@@ -10,8 +10,8 @@ import java.util.List;
 
 @CrossOrigin(value = "*")
 @RestController
-@RequestMapping(value = SchoolsController.PATH)
-public class SchoolsController {
+@RequestMapping(value = SchoolsApiController.PATH)
+public class SchoolsApiController {
     public static final String PATH = "/api/schools";
     private SchoolPojo schoolPojo = new SchoolPojo();
 

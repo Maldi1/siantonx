@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>schools</title>
-  </head>
-  <body>
-    <h1>Hello malik</h1>
-  </body>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <title>schools</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>heloo malik</h1>
+<!--        <p th:text="helloxxx, +${name} + !"/>-->
+        <p th:text="'helloxxx, '+ ${name}+'!'"/>
+    </body>
 </html>
