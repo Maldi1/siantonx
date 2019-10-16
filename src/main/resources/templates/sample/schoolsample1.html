@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>hello : ${school.name}</title>
+    </head>
+<#--        <h1>heloo malik</h1>-->
+<!--        <h1>heloo malik</h1>-->
+        <#if true>
+            <p>value is true</p>
+        <#else>
+            value is false
+        </#if>
+
+        <p>hello malik, this value from freemarker : ${school.name?upper_case}</p>
+        <p>hello malik, this value from freemarker : ${school.name?cap_first}</p>
+        <p>hello malik, this value from freemarker : ${school.name?length}</p>
+        <p>hello malik, this value from freemarker : ${school.namez ! "weeek datane ga nok"}</p>
+        <p>hello malik, this value from freemarker : ${sekolah ! "weeek datane ga null"}</p>
+        <p>hello malik, this value from freemarker : ${companyname ! "weeek datane ga null"}</p>
+        <p>hello malik, this value from freemarker : ${valuess!30 *2}</p>
+        <#if school.namex??><p>hello malik, this value from freemarker : ${school.namex ! "weeek datane ga null"}</p></#if>
+
+        <#include "footer/template-footer.html">
+    </body>
+</html>

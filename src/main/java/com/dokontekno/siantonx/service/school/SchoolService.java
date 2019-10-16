@@ -63,7 +63,7 @@ public class SchoolService {
         data.setAddress(school.getAddress());
         data.setPhoneNumber(school.getPhoneNumber());
         data.setEmail(school.getEmail());
-        data.setWhatsappPhoneNumber(school.getWhatsappPhoneNumber());
+        data.setWhatsappNumber(school.getWhatsappNumber());
         data.setActive(school.getActive());
         data.setCreateBy("malikxxx");
         data.setUpdateBy("malikxxx");

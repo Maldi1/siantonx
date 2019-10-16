@@ -30,15 +30,15 @@ public class School extends BaseMaster {
     private String phoneNumber;
 
     @Column(name = "whatsapp_number", length = 20, nullable = false)
-    private String whatsappPhoneNumber;
+    private String whatsappNumber;
 
-    public School(String npsn, String name, String address, String email, String phoneNumber, String whatsappPhoneNumber) {
+    public School(String npsn, String name, String address, String email, String phoneNumber, String whatsappNumber) {
         this.npsn = npsn;
         this.name = name;
         this.address = address;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.whatsappPhoneNumber = whatsappPhoneNumber;
+        this.whatsappNumber = whatsappNumber;
     }
 
 }

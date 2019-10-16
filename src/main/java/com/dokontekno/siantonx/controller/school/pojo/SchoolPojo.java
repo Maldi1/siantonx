@@ -20,7 +20,7 @@ public class SchoolPojo extends BaseMasterPojo {
     private String address;
     private String email;
     private String phoneNumber;
-    private String whatsappPhoneNumber;
+    private String whatsappNumber;
 
     public SchoolPojo toSchoolPojo(School school){
         if (school == null) return null;
@@ -37,7 +37,7 @@ public class SchoolPojo extends BaseMasterPojo {
         schoolPojo.setAddress(school.getAddress());
         schoolPojo.setEmail(school.getEmail());
         schoolPojo.setPhoneNumber(school.getPhoneNumber());
-        schoolPojo.setWhatsappPhoneNumber(school.getWhatsappPhoneNumber());
+        schoolPojo.setWhatsappNumber(school.getWhatsappNumber());
         return schoolPojo;
     }
 
@@ -61,7 +61,7 @@ public class SchoolPojo extends BaseMasterPojo {
         school.setName(schoolPojo.getName());
         school.setAddress(schoolPojo.getName());
         school.setEmail(schoolPojo.getEmail());
-        school.setWhatsappPhoneNumber(schoolPojo.getWhatsappPhoneNumber());
+        school.setWhatsappNumber(schoolPojo.getWhatsappNumber());
         school.setPhoneNumber(schoolPojo.getPhoneNumber());
 
         return school;
