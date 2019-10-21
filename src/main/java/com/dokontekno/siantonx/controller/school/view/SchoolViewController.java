@@ -35,7 +35,7 @@ public class SchoolViewController {
                           @RequestParam(name = "whatsappNumber", defaultValue = "%") String whatsappNumber){
         List<School> schools = schoolService.getSchools(npsn, name, address, email, phoneNumber, whatsappNumber);
         model.addAttribute("schools", schools);
-        return "/school/schools";
+        return "/tables-data-school";
     }
 
     @GetMapping("/index")

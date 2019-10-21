@@ -1,8 +1,7 @@
 package com.dokontekno.siantonx.controller.school.pojo;
 
-import com.dokontekno.siantonx.controller.commonspojo.BaseMasterPojo;
+import com.dokontekno.siantonx.controller.commons.pojo.BaseMasterPojo;
 import com.dokontekno.siantonx.entity.school.School;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;

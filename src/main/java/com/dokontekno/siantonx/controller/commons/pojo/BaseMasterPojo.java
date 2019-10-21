@@ -1,4 +1,4 @@
-package com.dokontekno.siantonx.controller.commonspojo;
+package com.dokontekno.siantonx.controller.commons.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
