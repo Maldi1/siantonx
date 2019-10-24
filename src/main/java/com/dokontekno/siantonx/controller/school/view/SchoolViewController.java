@@ -18,11 +18,11 @@ public class SchoolViewController {
     @Autowired
     private SchoolService schoolService;
 
-    @GetMapping("/school/{id}")
-    public String school(Model model, @PathVariable(required = true) UUID id){
-        School school = schoolService.getSchool(id);
-        model.addAttribute("school", school);
-        return "/school/school";
+    @GetMapping("/school")
+    public String school(){
+//        School school = schoolService.getSchool(id);
+//        model.addAttribute("school", school);
+        return "/school/form-school";
     }
 
     @GetMapping("/schools")
